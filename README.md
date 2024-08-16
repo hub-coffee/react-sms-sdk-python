@@ -7,12 +7,13 @@ pip install reactsms-sdk-python==0.2
 # Utilisation du package
 from react_sms_sdk_python.react_sms import ReactSMS
 
+
 class SMSAPI():
 
     AUTH_KEY = "rs_befb3ee389cf3a44864b75f36680fae5"
 
     API_KEY = "rs_3108861fc1044ca7920fdbc7133323ed"
-    
+
     SERVICE_KEY = "938125"
 
     def __init__(self):
