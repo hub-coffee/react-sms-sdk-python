@@ -6,6 +6,8 @@ def test():
     service_key = "938125"
 
     sdk = ReactSMS(auth_key, api_key, service_key)
-    return sdk.send("just a test", [{"zip_code":"+225", "number":"0758187266"}])
+    return sdk.balance()
+    #return sdk.send("just a test", [{"zip_code":"+225", "number":"0758187266"}])
+
 
 print(test())

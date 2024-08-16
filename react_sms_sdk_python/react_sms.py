@@ -53,5 +53,18 @@ class ReactSMS():
 
 
     
-    def balance():
-        pass
+    def balance(self):
+
+        try:
+            response = requests.get(ReactSMS.BASE_URL+"/get_balance", headers=self.headers)
+            response.raise_for_status() 
+            data = response.json()
+
+        except requests.exceptions.HTTPError as http_err:
+            raise Exception({'error': str(http_err)})
+            #JsonResponse({'error': str(http_err)}, status=400)
+
+        except Exception as err:
+            raise Exception({'error': str(err)})
+
+        return data
