@@ -12,8 +12,8 @@ def test_message_sending():
     return sdk.send(message, phones)
 
 
-print("====== Test message sending =====")
-print(test_message_sending())
+# print("====== Test message sending =====")
+# print(test_message_sending())
 
 
 
@@ -24,8 +24,8 @@ def test_balance_checking():
     sdk = ReactSMS(auth_key, api_key)
     return sdk.balance()
 
-print("====== Test balance checking =====")
-print(test_balance_checking())
+# print("====== Test balance checking =====")
+# print(test_balance_checking())
 
 
 
@@ -35,10 +35,10 @@ def test_service_building():
 
     sdk = ReactSMS(auth_key, api_key)
 
-    service_name = "service test", 
-    quota_sms = "0", 
+    service_name = "myt0", 
+    quota_sms = 0, 
     active_quota = False, 
-    description = None
+    description = "Just a test"
 
     return sdk.create_service(service_name, quota_sms, active_quota, description)
 

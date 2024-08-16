@@ -30,6 +30,7 @@ class ReactSMS():
         return base64.b64encode(text.encode('utf-8')).decode('utf-8')
 
 
+
     def send(self, message, recipients):
         payload = {
             "message": message,
@@ -69,9 +70,9 @@ class ReactSMS():
 
         return data
     
-    
 
-    def create_service(self, service_name, quota_sms, active_quota, description = None):
+
+    def create_service(self, service_name, quota_sms, active_quota, description):
         payload = {
             "service_name": service_name,
             "quota_sms": quota_sms,
@@ -80,7 +81,7 @@ class ReactSMS():
         }
 
         try:
-            response = requests.post(ReactSMS.BASE_URL+"/create_service", json=payload, headers=self.headers)
+            response = requests.post(ReactSMS.BASE_URL+"/create_service", data=payload, headers=self.headers)
             response.raise_for_status() 
             data = response.json()
 
