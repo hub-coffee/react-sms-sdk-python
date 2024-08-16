@@ -11,7 +11,7 @@ class ReactSMS():
     BASE_URL = "https://react-sms.com/messages"
 
 
-    def __init__(self, auth_key:str, api_key:str, service_key:str=None):
+    def __init__(self, auth_key, api_key, service_key=None):
         self.auth_key = auth_key
         self.api_key  = api_key
         self.service_key = service_key
@@ -31,7 +31,7 @@ class ReactSMS():
 
 
 
-    def send(self, message:str, recipients:list):
+    def send(self, message, recipients):
         payload = {
             "message": message,
             "numbers": json.dumps(recipients),
@@ -72,7 +72,7 @@ class ReactSMS():
     
 
 
-    def create_service(self, service_name:str, quota_sms:int, active_quota:bool, description:str):
+    def create_service(self, service_name, quota_sms, active_quota, description):
         payload = {
             "service_name": service_name,
             "quota_sms": quota_sms,
