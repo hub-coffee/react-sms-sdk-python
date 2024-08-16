@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='react-sms-sdk-python',  # Nom de votre package
+    name='reactsms_sdk_python',  # Nom de votre package
     version='0.1',  # Version initiale
     author='Huberson Kouakou',
     author_email='huberson.kouakou@yahoo.com',

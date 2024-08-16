@@ -1,1 +1,0 @@
-react-sms-sdk-python
