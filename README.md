@@ -5,8 +5,8 @@ SDK Python pour React SMS
 pip install reactsms-sdk-python==0.2
 
 # Utilisation du package
-from react_sms_sdk_python.react_sms import ReactSMS
 
+from react_sms_sdk_python.react_sms import ReactSMS
 
 class SMSAPI():
 
