@@ -3,6 +3,14 @@
 
 SDK Python pour React SMS
 
+A travers ce package, vous pourrez:
+
+- Envoyer des SMS
+
+- Consulter votre solde
+
+- Creer de nouveaux services
+
 
 ## Installation du package
 
