@@ -12,8 +12,8 @@ def test_message_sending():
     return sdk.send(message, phones)
 
 
-# print("====== Test message sending =====")
-# print(test_message_sending())
+print("====== Test message sending =====")
+print(test_message_sending())
 
 
 
@@ -24,8 +24,8 @@ def test_balance_checking():
     sdk = ReactSMS(auth_key, api_key)
     return sdk.balance()
 
-# print("====== Test balance checking =====")
-# print(test_balance_checking())
+print("====== Test balance checking =====")
+print(test_balance_checking())
 
 
 
