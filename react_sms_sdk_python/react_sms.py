@@ -6,7 +6,7 @@
 import requests, base64, json
 
 
-class SMSAPI():
+class ReactSMS():
 
     BASE_URL = "https://react-sms.com/messages"
 
@@ -38,7 +38,7 @@ class SMSAPI():
         }
 
         try:
-            response = requests.post(SMSAPI.BASE_URL+"/send", json=payload, headers=self.headers)
+            response = requests.post(ReactSMS.BASE_URL+"/send", json=payload, headers=self.headers)
             response.raise_for_status() 
             data = response.json()
 
