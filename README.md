@@ -7,6 +7,8 @@ SDK Python pour React SMS
 ## Installation du package
 
 
+Pour l'installation rendez-vous sur https://pypi.org/project/reactsms-sdk-python/ ou 
+
     pip install reactsms-sdk-python==0.2
 
 
