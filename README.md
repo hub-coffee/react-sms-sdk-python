@@ -1,26 +1,26 @@
 # react-sms-sdk-python
 
 
-SDK Python pour React SMS
+React SMS SDK for Python 
 
-A travers ce package, vous pourrez:
+With this SDK, you can:
 
-- Envoyer des SMS
+- Send SMS
 
-- Consulter votre solde
+- Check your balance
 
-- Creer de nouveaux services
-
-
-## Installation du package
+- Create services
 
 
-Pour l'installation rendez-vous sur https://pypi.org/project/reactsms-sdk-python/ ou 
-
-    pip install reactsms-sdk-python==0.2
+## Package Installation 
 
 
-## Utilisation du package
+To install tihs package go to https://pypi.org/project/reactsms-sdk-python/ or run:
+
+    pip install reactsms-sdk-python==0.2.1
+
+
+## Package Usage 
 
 
     from react_sms_sdk_python.react_sms import ReactSMS
@@ -28,11 +28,11 @@ Pour l'installation rendez-vous sur https://pypi.org/project/reactsms-sdk-python
 
     class SMSAPI():
 
-        AUTH_KEY = "rs_befb3ee389cf3a44864b75f36680fae5"
+        AUTH_KEY = "rs_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 
-        API_KEY = "rs_3108861fc1044ca7920fdbc7133323ed"
+        API_KEY = "rs_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 
-        SERVICE_KEY = "938125"
+        SERVICE_KEY = "xxxxxx"
 
         def __init__(self):
             self.sdk = ReactSMS(SMSAPI.AUTH_KEY, SMSAPI.API_KEY, SMSAPI.SERVICE_KEY)
