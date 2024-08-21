@@ -2,10 +2,10 @@ from setuptools import setup, find_packages
 
 setup(
     name='reactsms_sdk_python',  # Nom de votre package
-    version='0.2',  # Version initiale
+    version='0.3',  # Version initiale
     author='Huberson Kouakou',
     author_email='huberson.kouakou@yahoo.com',
-    description='SDK Python pour React SMS',
+    description='React SMS SDK for Python',
     long_description=open('README.md').read(),  # Description longue depuis un fichier README.md
     long_description_content_type='text/markdown',  # Format du README
     url='https://github.com/hub-coffee/react-sms-sdk-python.git',  # Lien vers le dépôt du code source (ex : GitHub)
